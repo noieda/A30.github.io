@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,7 +18,7 @@
     margin: 0 auto;
     height: 75px;
     width: 100%;
-    background-color: rgb(0,128,128, 0.9);
+    background-color: rgb(0, 128, 128, 0.9);
     position: fixed;
     top: 0;
     z-index: 10;
@@ -27,44 +28,44 @@
     
   } */
 
-  .logo {
+.logo {
     width: 90px;
     margin-top: 14px;
-  }
+}
 
-  .header-left{
+.header-left {
     float: left;
     margin-left: 25px;
-  }
+}
 
-  .header-right{
+.header-right {
     float: right;
     margin-right: 25px;
-  }
+}
 
-  .header-right a {
+.header-right a {
     line-height: 75px;
     padding: 0 25px;
     color: white;
     display: block;
     float: left;
-    transition: all 0.5s; 
-  }
+    transition: all 0.5s;
+}
 
-  .header-right a:hover{
+.header-right a:hover {
     background-color: rgba(255, 255, 255, 0.3);
-  }
+}
 
-  .menu-icon{
+.menu-icon {
     color: white;
     float: right;
     font-size: 25px;
     padding: 21px 0;
     display: none;
-  }
+}
 
 /* Home style */
-.home{
+.home {
     display: flex;
     background: url(image/Kelompok-A301.png) no-repeat center;
     /* margin-top: 25px; */
@@ -72,21 +73,24 @@
     background-size: cover;
     width: 100%
 }
-.home .home-content{
+
+.home .home-content {
     margin-top: 35vh;
     color: aliceblue;
     margin-left: 34vh;
     opacity: 0.5;
 }
-.home .home-content .text-1{
+
+.home .home-content .text-1 {
     font-family: Ubuntu, sans-serif;
     font-size: 30px;
     padding-bottom: 3px;
     color: lightseagreen;
-    
-    
+
+
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-family: Ubuntu;
     font-size: 55px;
     letter-spacing: 0.5pc;
@@ -95,7 +99,8 @@
     color: snow;
 
 }
-.home .home-content .text-2 span{
+
+.home .home-content .text-2 span {
     color: lightskyblue;
     letter-spacing: 5px;
     word-spacing: 10px;
@@ -106,8 +111,9 @@ main {
     display: flex;
 
 }
+
 /* main style */
-.container-profile{
+.container-profile {
     /* position: absolute; */
     /* top: 105%; */
     /* left: 20%; */
@@ -117,12 +123,13 @@ main {
     /* transform: translate(-50%, -50%); */
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    box-shadow: 5px 5px 30px 7px rgba(255, 255, 255, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    /* box-shadow: 0 0 25px rgba(0, 0, 0, .1); */
     opacity: 0.978;
     overflow: hidden;
 }
 
-.profile{
+.profile {
     /* position: absolute; */
     width: 100%;
     height: 60%;
@@ -133,10 +140,10 @@ main {
 .profile-picture {
     height: 100%;
     width: 100%;
-    object-fit : cover
+    object-fit: cover
 }
 
-.profile-text{
+.profile-text {
     /* position: unset; */
     bottom: 0;
     width: 100%;
@@ -154,7 +161,7 @@ main {
     display: flex;
 }
 
-.profile-content .profile-key{
+.profile-content .profile-key {
     margin-top: auto;
     text-align: justify;
     font-size: .8rem;
@@ -164,25 +171,26 @@ main {
     transition: .5s;
 }
 
-.profile-content .profile-key p{
+.profile-content .profile-key p {
     margin-top: 5px;
+    margin-left: 10px;
 }
 
-.profile-text span{
+.profile-text span {
     display: block;
     transition: .7 cubic-bezier(.75, -1, 0, 1.15);
     margin: 2px;
 }
 
-.profile-text span:nth-child(1){
+.profile-text span:nth-child(1) {
     transform: translateX(-240px);
 }
 
-.profile-text span:nth-child(2){
+.profile-text span:nth-child(2) {
     transform: translateX(240px);
 }
 
-.profile-content .profile-links{
+.profile-content .profile-links {
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -190,7 +198,7 @@ main {
     letter-spacing: .5pc;
 }
 
-.profile-content .profile-links a{
+.profile-content .profile-links a {
     display: inline-block;
     margin: 5px;
     width: 40px;
@@ -203,40 +211,54 @@ main {
     transition: .7s cubic-bezier(.75s, -1, 0, 1.15);
 }
 
-.profile-content .profile-links a :nth-child(1){
+.profile-content .profile-links a :nth-child(1) {
     background-color: #dd2a7b;
     transform: translateX(-200px)
 }
-.profile-content .profile-links a :nth-child(2){
+
+.profile-content .profile-links a :nth-child(2) {
     background: #26242e;
     transform: translateY(200px);
 }
-.profile-content .profile-links a :nth-child(3){
+
+.profile-content .profile-links a :nth-child(3) {
     background: #0077b5;
     transform: translateX(200px);
 }
 
-.container-profile:hover .profile-text{
+.container-profile:hover .profile-text {
     transform: translateY(-60px)
 }
-.container-profile:hover .profile{
+
+.container-profile:hover .profile {
     transform: translateY(-70), scale(1.1);
 }
-.container-profile:hover .profile-text #name span{
+
+.container-profile:hover .profile-text #name span {
     transform: translateX(0);
     transition-delay: .5s;
 }
-.container-profile:hover .profile-content{
+
+.container-profile:hover .profile-content {
     opacity: 1;
     transition-delay: 1.5s;
 }
-.container-profile:hover .profile-links a{
-    transform: translate(0,0);
+
+.container-profile:hover .profile-links a {
+    transform: translate(0, 0);
     transition-delay: .5s;
+}
+
+
+/* Main Styles */
+
+.main-bg {
+    background-color: #021426d9;
+    background-image: linear-gradient(0deg, #0b476f 0%, #041825 100%);
 }
 
 @media only screen and (max-width: 600px) {
     .home {
-      height: 50vh;
+        height: 50vh;
     }
 }
