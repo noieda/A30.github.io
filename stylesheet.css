@@ -6,6 +6,63 @@
     text-decoration: none;
 }
 
+/* body {
+    margin: 0;
+    font-family: "Lucida Grande";
+} */
+
+.container-nav {
+    /* max-width: 1170px; */
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 75px;
+    width: 100%;
+    background-color: rgb(0,128,128, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+/* header {
+    
+  } */
+
+  .logo {
+    width: 90px;
+    margin-top: 14px;
+  }
+
+  .header-left{
+    float: left;
+    margin-left: 25px;
+  }
+
+  .header-right{
+    float: right;
+    margin-right: 25px;
+  }
+
+  .header-right a {
+    line-height: 75px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s; 
+  }
+
+  .header-right a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .menu-icon{
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+
 /* Home style */
 .home{
     display: flex;
