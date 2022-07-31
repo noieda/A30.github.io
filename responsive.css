@@ -65,9 +65,11 @@
   }
   
   .main-bg {
+    width: fit-content;
     padding: 3em 0em;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .container-profile {
