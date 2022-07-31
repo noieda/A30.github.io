@@ -68,13 +68,31 @@
 .home-content {
     color: aliceblue;        
     opacity: 0.5;
+    
 }
+
 
 .text-1 {
     font-family: Ubuntu, sans-serif;
     font-size: 30px;
     padding-bottom: 3px;
     color: lightseagreen;
+    /* margin-left: 10px; */
+    font-size: 40px;
+    color: #000;
+    /* border-bottom: 1.8px solid rgba(127, 131, 131, 0.089); */
+    background: linear-gradient(to right, #fff 20%, #65c7f7 40%, #0052D4 60%, #fff 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-fill-color: transparent !important;
+    animation: animate 1.7s linear infinite;
+}
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
 }
 
 .text-2 {
@@ -83,7 +101,23 @@
     letter-spacing: 0.5pc;
     word-spacing: 0.5pc;
     padding-top: 3px;
-    color: snow;    
+    color: snow;
+     /* margin-left: 10px; */
+     font-size: 40px;
+     color: #000;
+     /* border-bottom: 1.8px solid rgba(127, 131, 131, 0.089); */
+     background: linear-gradient(to right, #fff 20%, #0bbdd4 40%, #065a81 60%, rgb(191, 238, 238) 80%);
+     background-size: 200% auto;
+     background-clip: text;
+     -webkit-background-clip: text !important;
+     -webkit-text-fill-color: transparent !important;
+     text-fill-color: transparent !important;
+     animation: animate 2.5s linear infinite;
+}
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
 }
 
 .text-2 span {
@@ -128,6 +162,8 @@ main {
     
     display: flex;
 }
+/* Add animasi */
+
 
 .profile-key {
         
